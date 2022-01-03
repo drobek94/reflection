@@ -19,6 +19,7 @@ class Helpers
 	 * @return \ReflectionClass
 	 * @internal
 	 */
+	#[\ReturnTypeWillChange]
 	public static function getDeclaringClass(\ReflectionProperty $prop)
 	{
 		foreach ($prop->getDeclaringClass()->getTraits() as $trait) {
